@@ -2,21 +2,36 @@
 <html lang="ko">
 <head>
     <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1"> 
-    <title>Empty</title>
-    <link href="empty.css" rel="stylesheet"> <!-- 외부 CSS 연결 -->
-    <style>
-        /* CSS 코드 */
-    </style>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>9월 27일 실습</title>
 </head>
 
 <body>
-    <p>스크립트 파일</p>
-<script type="text/javascript" src="empty.js"></script> <!-- JS 라이브러리 또는 외부 스크립트 연결 -->
-<script>
-    document.write('자바스크립트 실행 테스트');
-    document.write('왜 안되는 거임');
-</script>
+    <p id="text01">자바스크립트</p>
+    <p class="text02">jQuery 라이브러리</p>
+    <h3>H3 태그</h3>
+    <script>
+
+    </script>
+
+    <script type="text/javascript" src="js/jquery-3.6.1.js"></script>
+    <script>
+        // $().method(); ex) $().animation();  /  ''안에 들어가는건 문자열=스트링(string) -> 숫자도 문자로 인식
+        // $('#button01').hover(function(){}, function(){});  - 마우스 올렸을때, 아닐때 둘다 이렇게 적음
+        $('#button01').hover(
+            function(){
+                $('#target01').css('display', 'block');
+            },
+            function(){
+                $('#target01').css('display', 'none');
+            }
+        );
+        $('#button01').click(
+            function(){
+                $('#target01').css({'width':'400px', 'height':'400px'})
+            }
+        );
+    </script>
 </body>
     
 </html>

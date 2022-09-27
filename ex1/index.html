@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>9/27</title>
+    <link href="empty.css" rel="stylesheet"> <!-- 외부 CSS 연결 -->
+    <style>
+        /* CSS 코드 */
+        #button01 {
+            position: absolute;
+            width: 200px;
+            height: 100px;
+            top: 50px;
+            left: 50px;
+            background-color: aquamarine;
+            border: dashed 3px #000000;
+        }
+        #target01 {
+            display: none;
+            position: absolute;
+            width: 200px;
+            height: 200px;
+            top: 200px;
+            left: 50px;
+            background-color:blueviolet;
+            border: dashed 3px #000000;
+        }
+    </style>
+</head>
+
+<body>
+    <div id="button01"></div>
+    <div id="target01"></div>
+
+    <script type="text/javascript" src="js/jquery-3.6.1.js"></script> <!-- JS 라이브러리 또는 외부 스크립트 연결 -->
+    <script>
+        $('#button01').hover(
+            function(){
+                $('#target01').css('display', 'block');
+            },
+            function(){
+                $('#target01').css('display', 'none');
+            }
+        );
+        $('#button01').click(function(){
+            $('#target01').css({'width':'400px', 'height':'400px'});
+        });
+    </script>
+</body>
+    
+</html>
