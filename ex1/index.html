@@ -6,6 +6,7 @@
     <title>9/27</title>
     <link href="empty.css" rel="stylesheet"> <!-- 외부 CSS 연결 -->
     <style>
+        
         /* CSS 코드 */
         #button01 {
             position: absolute;
@@ -13,28 +14,48 @@
             height: 100px;
             top: 50px;
             left: 50px;
-            background-color: aquamarine;
-            border: dashed 3px #000000;
+            padding: 0;
+            margin: 0;
+            background-color: rgb(230, 201, 255);
         }
         #target01 {
             display: none;
-            position: absolute;
+            position: relative;
             width: 200px;
-            height: 200px;
-            top: 200px;
-            left: 50px;
-            background-color:blueviolet;
-            border: dashed 3px #000000;
+            top: 0px;
+            left: 0px;
+            padding: 16px 0;
+            margin: 0;
+            color: #ffffff;
+            background-color:black;
+            opacity: 50%;
+        }
+        #image1 {
+            position: relative;
+            width: 300px;
+            height: 100px;
+            top: 300px;
+            left: 50%;
         }
     </style>
 </head>
 
 <body>
-    <div id="button01"></div>
+    <div id="button01">
+        <p> IMAGES </p>
+        <div id="target01">
+            <p class="menuitem"><a href="#">hover</a></p>
+        </div>
+    </div>
     <div id="target01"></div>
+    <div id="image1"><img src="images/arietty1.jpg" width="600px"></div>
 
     <script type="text/javascript" src="js/jquery-3.6.1.js"></script> <!-- JS 라이브러리 또는 외부 스크립트 연결 -->
     <script>
+        $('p').css('color', '#ffffff');  
+        $('p').css('font-size', '30px');
+        $('.menuitem').css('font-size', '30px');
+        $('.menuitem > a').css('color', '#ffffff');
         $('#button01').hover(
             function(){
                 $('#target01').css('display', 'block');
@@ -43,9 +64,22 @@
                 $('#target01').css('display', 'none');
             }
         );
-        $('#button01').click(function(){
-            $('#target01').css({'width':'400px', 'height':'400px'});
-        });
+        $('#button01').hover(
+            function(){
+                $('#target01').fadeIn(300);
+            },
+            function(){
+                $('#target01').fadeOut(300);
+            }
+        );
+        $('#target01').hover(
+            function(){
+                $('#image1').css('display', 'none');
+            },
+            function(){
+                $('#image1').css('display', 'block');
+            }
+        );
     </script>
 </body>
     
