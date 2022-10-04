@@ -1,6 +1,8 @@
+@import url('https://fonts.googleapis.com/css2?family=Alkalami&family=Gugi&display=swap');
+
 #slideshow-frame {
     position: relative;
-    width: 960px;
+    width: 1200px;
     height: 540px;
     top: 100px;
     left: 100px;
@@ -33,20 +35,27 @@
 }
 #slides {
     position: absolute;
-    width: 2880px;
+    width: 3600px;
     height: 540px;
     left: 100px;
     color: #ffffff;
-    background-color:blueviolet;
+    background-color:mediumaquamarine;
 }
 #slides > img {
     display: block;
-    width: 960px;
+    width: 1200px;
     float: left;
+}
+#font {
+    display : flex;
+    left : 150px;
+    position : absolute;
+    color : white;
+    font-family: 'Alkalami', serif;
 }
 .material-icons {
     font-size: 48px;
 }
 .material-icons:hover {
-    color:antiquewhite;
+    color: rgb(200, 200, 83);
 }
