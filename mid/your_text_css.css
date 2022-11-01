@@ -2,6 +2,9 @@
 
 .container{overflow:hidden;}
 
+a{
+  text-decoration: none;
+}
 .background {
 background-color: white;
 
@@ -94,3 +97,14 @@ border: 0;
   font-size : 2em;
   font-family: 'Noto Serif KR', serif;
 }
+
+span {
+  color: #F36C36;
+}
+.text01:hover, .text02:hover, .text03:hover, .text04:hover, .text05:hover, .text06:hover, .text07:hover, .text08:hover
+.text09:hover, .text10:hover, .text11:hover, .text12:hover, .text13:hover, .text14:hover, .text15:hover {
+  color: rgba(204, 1, 255, 0.521);
+}
+
+
+
