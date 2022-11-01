@@ -10,9 +10,9 @@
   </head>
   <body class="background">
     <div class="seekbar">
-      <input type="range" value="45.9" />
+      <input type="range" min ="0" max = "100" value="0">
       <div class="seekbar-progress">
-        <div role="progressbar" aria-valuemin="0" aria-valuemax="100" aria-valuenow="38" style="width: 0%;"></div>
+        <div role="progressbar" style="width: 0%;"></div>
       </div>
     </div>
   </div>
@@ -48,7 +48,7 @@
       '변액'이라는 단어가 붙은 보험은 바로 이런 한계를 극복하기 위해 등장한 보험상품이다. 컨셉트는 명확하다. 
       먼저 
       <a href="#"><span class="text07">변액종신보험</span></a>
-      은 보험료 일부를 적립식펀드에 투자해 헌드 실적에 따라 배당을 해준다. 
+      은 보험료 일부를 적립식펀드에 투자해 펀드 실적에 따라 배당을 해준다. 
       실적에 따라 사망보험금과 적립금이 변동되므로 투자 실적이 좋아지면 발생한 수익금을 사망보험금에 얹어 돌려주게 된다. 
       물론 원금보장이 되지 않는다. 따라서 운용실적이 0%이거나 마이너스면 계약시 정했던 최저사망보험금만 받게 된다. 
       변액보험은 아니지만 사람들이 많이 혼동하는 
@@ -81,7 +81,7 @@
     </div>
     <script type="text/javascript" src="js/jquery-3.6.1.js"></script>
     <script>
-
+      
       function qs(s) { return document.querySelector(s) }
 
       var handle = qs('.seekbar input[type="range"]');
@@ -93,8 +93,6 @@
         progressbar.style.width = this.value + '%';
         progressbar.setAttribute('aria-valuenow', this.value);
      });
-
-
 
     
     </script>
