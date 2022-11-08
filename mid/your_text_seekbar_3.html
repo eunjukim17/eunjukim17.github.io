@@ -5,10 +5,19 @@
     <title></title>
     <link href="your_text_css.css" rel="stylesheet">
     <style>
-      
+      #test {
+        position: fixed;
+        left: -100vw;
+        top : 0;
+        width: 100%;
+        height: 100%;
+        background-color: black;
+        /* z-index: 1000; */
+      }
     </style>
   </head>
   <body class="background">
+    <div id="test"></div>
     <div class="seekbar">
       <input type="range" min ="0" max = "100" value="0">
       <div class="seekbar-progress">
@@ -94,9 +103,13 @@
         progressbar.setAttribute('aria-valuenow', this.value);
         console.log(this.value);
         sliderX = this.value;
+
+        $('#test').css('left', sliderX * 20 - 2000);
      });
 
     
     </script>
   </body>
 </html>
+
+
