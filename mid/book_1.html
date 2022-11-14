@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>구의 증명</title>
+    <style>
+        
+        .background {
+            position : absolute;
+            width : 100%;
+            height : 100%;
+            background-color: black;
+            margin: 0;
+            padding: 0;
+            left : 0;
+            top : 0;
+            background-image : url('background.jpg');
+            background-size: cover;
+        }
+        .blur {
+            filter: blur(5px);
+        }
+        #image {
+            display: block;
+            position: relative;
+            left : 400px;
+            top : 220px;
+            height : 250px;
+            width : 200px;
+            background-color: aliceblue;
+            background-image : url('구의증명.jpg');
+            background-size : cover;
+        }
+        #text {
+            display: block;
+            position: absolute;
+            width : 400px;
+            height : 80px;
+            left : 700px;
+            top : 230px;
+            background-color: aquamarine;
+            font-size: 1.5em;
+            color : white;
+        }
+        #exit {
+            display: block;
+            position: absolute;
+            width: 50px;
+            height: 50px;
+            right: 50px;
+            top: 50px;
+            background-color: bisque;
+        }
+        img { width : 100%; height : 100%; }
+    </style>
+</head>
+<body>
+    <div class="background blur"></div>
+    <div id="image"></div>
+    <div id="text">구의 증명</div>
+    <div id="exit"></div>
+</body>
+</html>
