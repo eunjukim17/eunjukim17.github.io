@@ -24,10 +24,10 @@
         #image {
             display: block;
             position: relative;
-            left : 400px;
+            left : 360px;
             top : 220px;
-            height : 250px;
-            width : 200px;
+            height : 300px;
+            width : 230px;
             background-color: aliceblue;
             background-image : url('구의증명.jpg');
             background-size : cover;
@@ -37,11 +37,41 @@
             position: absolute;
             width : 400px;
             height : 80px;
-            left : 700px;
-            top : 230px;
-            background-color: aquamarine;
+            left : 660px;
+            top : 220px;
+            /* background-color: aquamarine; */
             font-size: 1.5em;
             color : white;
+            font-family: source-han-serif-korean, serif;
+            font-style: normal;
+            font-weight: 200;
+        }
+        #name {
+            display: block;
+            position: absolute;
+            width : 400px;
+            height : 40px;
+            left : 660px;
+            top : 260px;
+            font-size: 1.0em;
+            color : white;
+            font-family: source-han-serif-korean, serif;
+            font-style: normal;
+            font-weight: 400;
+        }
+        #explain {
+            display: block;
+            position: absolute;
+            width : 600px;
+            height : 80px;
+            left : 660px;
+            top : 310px;
+            font-size: 1.0em;
+            color : white;
+            font-family: source-han-serif-korean, serif;
+            font-style: normal;
+            font-weight: 400;
+            line-height: 2.0em;
         }
         #exit {
             display: block;
@@ -50,7 +80,8 @@
             height: 50px;
             right: 50px;
             top: 50px;
-            background-color: bisque;
+            background-image: url("exit_button.png");
+            background-size: cover;
         }
         img { width : 100%; height : 100%; }
     </style>
@@ -58,7 +89,19 @@
 <body>
     <div class="background blur"></div>
     <div id="image"></div>
-    <div id="text">구의 증명</div>
-    <div id="exit"></div>
+    <div id="text"><b>구의 증명</b></div>
+    <div id="name"><b>저자 최진원</b></div>
+    <div id="explain">
+        암 발병에 대한 두려움, 치료에 대한 공포, 재발의 우려… 이 모든 것을 겪은 이가 있다. 
+        이 책의 저자는 지난 35년간 꾸준히 암 연구를 해 온 생명과학자, 
+        동시에 2006년부터 투병해 온 암환자다. 
+        저자는 암 그리고 암 투병을 미로에 빗대어 설명한다. 
+        아직도 풀리지 않은 숙제 같은 것이며 앞으로도 정체를 온전히 밝혀내기가 
+        쉽진 않을 테니 말이다. 이 책에는 저자가 겪은 암 투병기와 암의 역자, 
+        항암제의 역사, 미래의 암 연구 등을 총망라해 담았다. 
+        자신을 희생하며 엮은 학문의 가치, 건강을 잃고 나서 얻은 
+        개인적인 사유를 담은 책이 드디어 독자들과 만난다.
+    </div>
+    <a href="your_text_seekbar_3.html"><div id="exit"></div></a>
 </body>
 </html>
