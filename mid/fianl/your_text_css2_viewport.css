@@ -1,0 +1,593 @@
+@import url('https://fonts.googleapis.com/css2?family=Alkalami&family=Gugi&family=Noto+Serif+KR:wght@300;400&display=swap');
+
+.container{overflow:hidden;}
+
+
+/* up 버튼 */
+
+#up {
+  display: block;
+  position: fixed;
+  width: 45px;
+  height: 45px;
+  right: 50px;
+  bottom: 50px;
+  background-image: url('up_black.png');
+  background-size: cover;
+  border-radius: 50%;
+  box-shadow: 5px 5px 3px  rgb(158, 158, 158);
+}
+
+/* 타이틀 */
+
+#title {
+  display: block;
+  position: absolute;
+  width: 200px;
+  height: 50px;
+  top: 40px;
+  margin: 0;
+  padding: 0;
+  left: 45%;
+  font-family: 'Noto Serif KR', serif;
+  font-style: normal;
+  font-weight: 200;
+  font-size: 1.5em;
+  color: #F36C36;
+}
+
+#title_hover {
+  display: none;
+  position: absolute;
+  width: 400px;
+  height: 400px;
+  top: 180px;
+  margin: 0;
+  left: 37%;
+  padding: 15px;
+  background-color: rgb(255, 255, 162);
+  font-family: 'Noto Serif KR', serif;
+  font-style: normal;
+  font-weight: 200;
+  font-size: 1.0em;
+  line-height: 2.0em;
+  box-shadow: 5px 5px 3px  rgb(158, 158, 158);
+  z-index: 1000;
+}
+
+/* 책 상세 설명 */
+
+#box1 {
+  display : none;
+  position: fixed;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  backdrop-filter: blur(10px);
+
+}
+.bookimage1 {
+  display: block;
+  position: absolute;
+  width: 16%;
+  height: 50%;
+  top: 200px;
+  left: 20%;
+  background-color: #ebebeb;
+  background-image: url('picture/구의증명.jpg');
+  background-size: cover;
+}
+.name1 {
+  display: block;
+  position: absolute;
+  width : 20%;
+  height : 5%;
+  left : 43%;
+  top : 200px;
+  /* background-color: aquamarine; */
+  font-size: 1.5em;
+  color : white;
+  font-family: 'Noto Serif KR', serif;
+  font-style: normal;
+  font-weight: 200;
+}
+.writer1 {
+  display: block;
+  position: absolute;
+  width : 20%;
+  height : 5%;
+  left : 43%;
+  top : 240px;
+  font-size: 1.0em;
+  color : white;
+  font-family: 'Noto Serif KR', serif;
+  font-style: normal;
+  font-weight: 400;
+}
+.explain1 {
+  display: block;
+  position: absolute;
+  width : 40%;
+  height : 40%;
+  left : 43%;
+  top : 290px;
+  font-size: 1.0em;
+  color : white;
+  font-family: 'Noto Serif KR', serif;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 2.0em;
+}
+.exit1 {
+  display: block;
+  position: absolute;
+  width: 50px;
+  height: 50px;
+  right: 50px;
+  top: 50px;
+  background-image: url("exit_button.png");
+  background-size: cover;
+}
+
+img { width : 100%; height : 100%; }
+
+/* 시크바 */
+
+a{
+  text-decoration: none;
+}
+.background {
+background-color: white;
+
+}
+
+.seekbar {
+top : 80px;
+margin: 12px 0;
+padding: 10px 400px;
+position: relative;
+}
+
+.seekbar-progress {
+height: 10px;
+background-color: #f5f5f5;
+background-image: linear-gradient(to bottom, #ebebeb 0%, #f5f5f5 100%);
+background-repeat: repeat-x;
+border-radius: 6px;
+}
+
+.seekbar-progress [role="progressbar"] {
+height: 100%;
+position: relative;
+background: #F36C36;
+border-radius: 6px;
+box-shadow: inset 0 -1px 0 rgba(0,0,0,.15);
+}
+
+.seekbar-progress [role="progressbar"]:after {
+content: " ";
+display: block;
+width: 50px;
+height: 50px;
+position: absolute;
+top: 2px;
+right: -8px;
+background-image: url('pen.png');
+background-size: cover;
+background-repeat: repeat-x; 
+}
+
+.seekbar input[type="range"] {
+-webkit-appearance: none;
+width: 100%;
+height: 100%;
+margin: 0;
+position: absolute;
+top: 0;
+left: 0;
+z-index: 2;
+background: transparent;
+outline: 0;
+border: 0;
+}
+
+.seekbar input[type="range"]::-webkit-slider-thumb {
+-webkit-appearance: none;
+display: block;
+width: 800px;
+height: 48px;
+background-color: transparent;
+}
+
+/*
+Mozilla:
+https://developer.mozilla.org/en-US/docs/User:Jonathan_Watt/range
+*/
+.seekbar input[type="range"]::-moz-range-thumb {
+display: block;
+width: 48px;
+height: 48px;
+background: transparent;
+border: 0;
+}
+
+.seekbar input[type="range"]::-moz-range-track {
+background: transparent;
+border: 0;
+}
+
+.seekbar input[type="range"]::-moz-focus-outer {
+border: 0;
+}
+
+/* 텍스트 */
+
+#whole_text {
+  display: block;
+  position: relative;
+  top : 150px;
+  left : 18%;
+  width: 30%;
+  padding-bottom: 100px;
+  font-size : 1.0em;
+  font-family: 'Noto Serif KR', serif;
+  line-height: 2.0em;
+} 
+#whole_text2 {
+  display: block;
+  position: absolute;
+  top : 200px;
+  left : 53%;
+  right: 40%;
+  width: 30%;
+  padding-bottom: 100px;
+  font-size : 1.0em;
+  font-family: 'Noto Serif KR', serif;
+  line-height: 2.0em;
+} 
+
+span {
+  color: #F36C36;
+}
+.text1:hover, .text2:hover, .text3:hover, .text4:hover,
+.text5:hover, .text6:hover, .text7:hover, .text8:hover,
+.text9:hover, .text10:hover, .text11:hover, .text12:hover,
+.text13:hover, .text14:hover, .text15:hover, .text16:hover,
+.text17:hover, .text18:hover, .text19:hover, .text20:hover,
+.text21:hover, .text22:hover, .text23:hover, .text24:hover,
+.text25:hover, .text26:hover, .text27:hover, .text28:hover,
+.text29:hover, .text30:hover, .text31:hover, .text32:hover,
+.text33:hover, .text34:hover, .text35:hover, .text36:hover,
+.text37:hover, .text38:hover, .text39:hover, .text40:hover,
+.text41:hover, .text42:hover, .text43:hover, .text44:hover,
+.text45:hover, .text46:hover, .text47:hover, .text48:hover,
+.text49:hover, .text50:hover, .text51:hover, .text52:hover,
+.text53:hover, .text54:hover, .text55:hover, .text56:hover,
+.text57:hover, .text58:hover, .text59:hover, .text60:hover,
+.text61:hover, .text62:hover, .text63:hover, .text64:hover,
+.text65:hover, .text66:hover, .text67:hover, .text68:hover,
+.text69:hover, .text70:hover, .text71:hover, .text72:hover,
+.text73:hover, .text74:hover, .text75:hover, .text76:hover,
+.text77:hover, .text78:hover, .text79:hover, .text80:hover,
+.text81:hover {
+  color : white;
+}
+
+@media screen and (max-width: 1024px) {
+  #whole_text {
+    display: block;
+    position: relative;
+    top : 200px;
+    margin: 0 auto;
+    left: 5%;
+    width: 50%;
+    font-size : 1.0em;
+    font-family: 'Noto Serif KR', serif;
+    line-height: 2.0em;
+  } 
+  #whole_text2 {
+    display: block;
+    position: relative;
+    top : 200px;
+    left: 5%;
+    margin: 0 auto;
+    width: 50%;
+    padding-bottom: 100px;
+    font-size : 1.0em;
+    font-family: 'Noto Serif KR', serif;
+    line-height: 2.0em;
+  } 
+  #box1 {
+    display : none;
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    backdrop-filter: blur(10px);
+  
+  }
+  .bookimage1 {
+  display: block;
+  position: relative;
+  width: 16%;
+  height: 50%;
+  top: 200px;
+  left: 20%;
+  background-color: #ebebeb;
+  background-image: url('picture/구의증명.jpg');
+  background-size: cover;
+}
+.name1 {
+  display: block;
+  position:relative;
+  width : 20%;
+  height : 5%;
+  left : 43%;
+  top : 200px;
+  /* background-color: aquamarine; */
+  font-size: 1.5em;
+  color : white;
+  font-family: 'Noto Serif KR', serif;
+  font-style: normal;
+  font-weight: 200;
+}
+.writer1 {
+  display: block;
+  position: relative;
+  width : 20%;
+  height : 5%;
+  left : 43%;
+  top : 240px;
+  font-size: 1.0em;
+  color : white;
+  font-family: 'Noto Serif KR', serif;
+  font-style: normal;
+  font-weight: 400;
+}
+.explain1 {
+  display: block;
+  position: relative;
+  width : 40%;
+  height : 40%;
+  left : 43%;
+  top : 290px;
+  font-size: 1.0em;
+  color : white;
+  font-family: 'Noto Serif KR', serif;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 2.0em;
+}
+}
+
+
+@media screen and (max-width: 1005px) {
+  #whole_text {
+    display: block;
+    position: relative;
+    top : 200px;
+    margin: 0 auto;
+    left : -15px;
+    width: 60%;
+    font-size : 1.0em;
+    font-family: 'Noto Serif KR', serif;
+    line-height: 2.0em;
+  } 
+  #whole_text2 {
+    display: block;
+    position: relative;
+    top : 200px;
+    margin: 0 auto;
+    left : -15px;
+    width: 60%;
+    padding-bottom: 100px;
+    font-size : 1.0em;
+    font-family: 'Noto Serif KR', serif;
+    line-height: 2.0em;
+  } 
+  .seekbar-progress [role="progressbar"]:after {
+    content: " ";
+    display: block;
+    width: 45px;
+    height: 45px;
+    position: absolute;
+    top: 2px;
+    right: -8px;
+    background-image: url('pen.png');
+    background-size: cover;
+    background-repeat: repeat-x; 
+  }
+  .seekbar {
+    top : 80px;
+    margin: 12px 0;
+    padding: 10px 250px;
+    position: relative;
+  }
+  .seekbar input[type="range"]::-webkit-slider-thumb {
+    -webkit-appearance: none;
+    display: block;
+    width: 500px;
+    height: 48px;
+    background-color: transparent;
+  }
+  #title_hover {
+    display: none;
+    position: absolute;
+    width: 380px;
+    height: 350px;
+    top: 180px;
+    margin: 0;
+    left: 32%;
+    padding: 15px;
+    background-color: rgb(255, 255, 162);
+    font-family: 'Noto Serif KR', serif;
+    font-style: normal;
+    font-weight: 200;
+    font-size: 0.8em;
+    line-height: 2.0em;
+    box-shadow: 5px 5px 3px  rgb(158, 158, 158);
+    z-index: 1000;
+  }
+}
+
+@media screen and (max-width: 500px) {
+  #whole_text {
+    display: block;
+    position: relative;
+    top : 200px;
+    margin: 0 auto;
+    left: 0;
+    width: 80%;
+    font-size : 1.0em;
+    font-family: 'Noto Serif KR', serif;
+    line-height: 2.0em;
+  } 
+  #whole_text2 {
+    display: block;
+    position: relative;
+    top : 200px;
+    left: 0;
+    margin: 0 auto;
+    width: 80%;
+    padding-bottom: 100px;
+    font-size : 1.0em;
+    font-family: 'Noto Serif KR', serif;
+    line-height: 2.0em;
+  } 
+  #title {
+    display: block;
+    position: absolute;
+    width: 200px;
+    height: 50px;
+    top: 40px;
+    margin: 0;
+    padding: 0;
+    left: 35%;
+    font-family: 'Noto Serif KR', serif;
+    font-style: normal;
+    font-weight: 200;
+    font-size: 1.5em;
+    color: #F36C36;
+  }
+  #up {
+    display: block;
+    position: fixed;
+    width: 35px;
+    height: 35px;
+    right: 50px;
+    bottom: 50px;
+    background-image: url('up_black.png');
+    background-size: cover;
+    border-radius: 50%;
+    box-shadow: 5px 5px 3px  rgb(158, 158, 158);
+    z-index: 1000;
+  }
+  .seekbar-progress [role="progressbar"]:after {
+    content: " ";
+    display: block;
+    width: 40px;
+    height: 40px;
+    position: absolute;
+    top: 2px;
+    right: -8px;
+    background-image: url('pen.png');
+    background-size: cover;
+    background-repeat: repeat-x; 
+  }
+  .seekbar {
+    top : 80px;
+    margin: 12px 0;
+    padding: 10px 100px;
+    position: relative;
+  }
+  .seekbar input[type="range"]::-webkit-slider-thumb {
+    -webkit-appearance: none;
+    display: block;
+    width: 200px;
+    height: 48px;
+    background-color: transparent;
+  }
+  .bookimage1 {
+    display: block;
+    position: relative;
+    width: 130px;
+    height: 200px;
+    top: 150px;
+    left: 38%;
+    background-color: #ebebeb;
+    background-image: url('picture/구의증명.jpg');
+    background-size: cover;
+  }
+  .name1 {
+    display: block;
+    position: relative;
+    width : 20%;
+    height : 5%;
+    left : 35%;
+    top : 180px;
+    /* background-color: aquamarine; */
+    font-size: 1.3em;
+    color : white;
+    font-family: 'Noto Serif KR', serif;
+    font-style: normal;
+    font-weight: 200;
+  }
+  .writer1 {
+    display: block;
+    position: relative;
+    width : 50%;
+    height : 5%;
+    left : 35%;
+    top : 180px;
+    font-size: 0.8em;
+    color : white;
+    font-family: 'Noto Serif KR', serif;
+    font-style: normal;
+    font-weight: 400;
+  }
+  .explain1 {
+    background-color: darksalmon;
+    display: block;
+    position: relative;
+    width : 40%;
+    height : 40%;
+    left : 35%;
+    top : 200px;
+    font-size: 0.8em;
+    color : white;
+    font-family: 'Noto Serif KR', serif;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 2.0em;
+  }
+  .exit1 {
+    display: block;
+    position: absolute;
+    width: 5%;
+    height: 5%;
+    right: 5%;
+    top: 50px;
+    background-image: url("exit_button.png");
+    background-size: cover;
+  }
+  #title_hover {
+    display: none;
+    position: absolute;
+    width: 350px;
+    height: 350px;
+    top: 180px;
+    margin: 0;
+    left : 30px;
+    padding: 15px;
+    background-color: rgb(255, 255, 162);
+    font-family: 'Noto Serif KR', serif;
+    font-style: normal;
+    font-weight: 200;
+    font-size: 0.8em;
+    line-height: 2.0em;
+    box-shadow: 5px 5px 3px  rgb(158, 158, 158);
+    z-index: 1000;
+  }
+}
