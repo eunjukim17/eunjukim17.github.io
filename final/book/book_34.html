@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>미술의 피부_이건수</title>
+    <style>
+        
+        .background {
+            position : absolute;
+            width : 100%;
+            height : 100%;
+            background-color: black;
+            margin: 0;
+            padding: 0;
+            left : 0;
+            top : 0;
+            background-image : url('background.jpg');
+            background-size: cover;
+        }
+        .blur {
+            filter: blur(5px);
+        }
+        #image {
+            display: block;
+            position: relative;
+            left : 360px;
+            top : 220px;
+            height : 300px;
+            width : 230px;
+            background-color: aliceblue;
+            background-image : url('미술의 피부_이건수.jpg');
+            background-size : cover;
+        }
+        #text {
+            display: block;
+            position: absolute;
+            width : 400px;
+            height : 80px;
+            left : 660px;
+            top : 220px;
+            /* background-color: aquamarine; */
+            font-size: 1.5em;
+            color : white;
+            font-family: source-han-serif-korean, serif;
+            font-style: normal;
+            font-weight: 200;
+        }
+        #name {
+            display: block;
+            position: absolute;
+            width : 400px;
+            height : 40px;
+            left : 660px;
+            top : 260px;
+            font-size: 1.0em;
+            color : white;
+            font-family: source-han-serif-korean, serif;
+            font-style: normal;
+            font-weight: 400;
+        }
+        #explain {
+            display: block;
+            position: absolute;
+            width : 600px;
+            height : 80px;
+            left : 660px;
+            top : 310px;
+            font-size: 1.0em;
+            color : white;
+            font-family: source-han-serif-korean, serif;
+            font-style: normal;
+            font-weight: 400;
+            line-height: 2.0em;
+        }
+        #exit {
+            display: block;
+            position: absolute;
+            width: 50px;
+            height: 50px;
+            right: 50px;
+            top: 50px;
+            background-image: url("exit_button.png");
+            background-size: cover;
+        }
+        img { width : 100%; height : 100%; }
+    </style>
+</head>
+<body>
+    <div class="background blur"></div>
+    <div id="image"></div>
+    <div id="text"><b>미술의 피부</b></div>
+    <div id="name"><b>이건수 / 출판 북노마드, 2017</b></div>
+    <div id="explain">
+        대한민국에서 세계미술 현장을 가장 많이, 그리고 널리 목격한 사람 중 한 명인 이건수 전 《월간미술》 편집장의 미술산문집 『미술의 피부』. 그림 한 점 들어 있지 않은 미술책으로, 현대미술 현장에 대한 저자의 아포리즘을 담았다. 2014 부산비엔날레 특별전 감독, 2013 국립현대미술관 올해의 작가상 심사위원, 2006 에르메스 코리아 심사위원 등 미술계의 최전선에서 글 쓰는 남자로 살아온 기록과 사색이 아름답게 펼쳐져 있다. 사회적이고 관계적인 예술의 현실에 대한 사색이자 비판을 담은 이 책에서 방대한 문화적 배경지식, 오랜 시간 글을 써온 내공이 만들어낸 쉽고 간결한 문장, 그리고 그 속에 담긴 한 남자의 사색을 엿볼 수 있다. 지금-여기 우리의 미술을 향한 무한한 애정과 조언, 미술을 사랑하는 자로서의 자존심과 열정, 그리고 삶에 대한 위로까지 미술을 넘어 우리의 삶에 생각의 물꼬를 트게 만든다.
+    </div>
+    <a href="your_text_seekbar_3.html"><div id="exit"></div></a>
+</body>
+</html>

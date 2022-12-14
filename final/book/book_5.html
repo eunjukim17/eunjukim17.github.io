@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>우리 대중문화 길찾기_강준만</title>
+    <style>
+        
+        .background {
+            position : absolute;
+            width : 100%;
+            height : 100%;
+            background-color: black;
+            margin: 0;
+            padding: 0;
+            left : 0;
+            top : 0;
+            background-image : url('background.jpg');
+            background-size: cover;
+        }
+        .blur {
+            filter: blur(5px);
+        }
+        #image {
+            display: block;
+            position: relative;
+            left : 360px;
+            top : 220px;
+            height : 300px;
+            width : 230px;
+            background-color: aliceblue;
+            background-image : url('우리 대중문화 길찾기_강준만.jpg');
+            background-size : cover;
+        }
+        #text {
+            display: block;
+            position: absolute;
+            width : 400px;
+            height : 80px;
+            left : 660px;
+            top : 220px;
+            /* background-color: aquamarine; */
+            font-size: 1.5em;
+            color : white;
+            font-family: source-han-serif-korean, serif;
+            font-style: normal;
+            font-weight: 200;
+        }
+        #name {
+            display: block;
+            position: absolute;
+            width : 400px;
+            height : 40px;
+            left : 660px;
+            top : 260px;
+            font-size: 1.0em;
+            color : white;
+            font-family: source-han-serif-korean, serif;
+            font-style: normal;
+            font-weight: 400;
+        }
+        #explain {
+            display: block;
+            position: absolute;
+            width : 600px;
+            height : 80px;
+            left : 660px;
+            top : 310px;
+            font-size: 1.0em;
+            color : white;
+            font-family: source-han-serif-korean, serif;
+            font-style: normal;
+            font-weight: 400;
+            line-height: 2.0em;
+        }
+        #exit {
+            display: block;
+            position: absolute;
+            width: 50px;
+            height: 50px;
+            right: 50px;
+            top: 50px;
+            background-image: url("exit_button.png");
+            background-size: cover;
+        }
+        img { width : 100%; height : 100%; }
+    </style>
+</head>
+<body>
+    <div class="background blur"></div>
+    <div id="image"></div>
+    <div id="text"><b>우리 대중문화 길찾기</b></div>
+    <div id="name"><b>저자 강준만 / 출판 개마고원, 1998</b></div>
+    <div id="explain">
+        우리 대중문화가 갖는 특징과 문제점, 앞으로 나아가야 할 방향을 모색한 현직 신문방송학 교수의 문화비평서. 진정한 공동체 문화를 형성하기 위해 대중문화를 어떻게 인식하고 발전시켜야 할지에 대한 논의를 담고 있다.
+    </div>
+    <a href="your_text_seekbar_3.html"><div id="exit"></div></a>
+</body>
+</html>

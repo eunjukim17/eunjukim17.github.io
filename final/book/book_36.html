@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>보이지 않는 손길_해리 벡위드</title>
+    <style>
+        
+        .background {
+            position : absolute;
+            width : 100%;
+            height : 100%;
+            background-color: black;
+            margin: 0;
+            padding: 0;
+            left : 0;
+            top : 0;
+            background-image : url('background.jpg');
+            background-size: cover;
+        }
+        .blur {
+            filter: blur(5px);
+        }
+        #image {
+            display: block;
+            position: relative;
+            left : 360px;
+            top : 220px;
+            height : 300px;
+            width : 230px;
+            background-color: aliceblue;
+            background-image : url('보이지 않는 손길_해리 벡위드.jpg');
+            background-size : cover;
+        }
+        #text {
+            display: block;
+            position: absolute;
+            width : 400px;
+            height : 80px;
+            left : 660px;
+            top : 220px;
+            /* background-color: aquamarine; */
+            font-size: 1.5em;
+            color : white;
+            font-family: source-han-serif-korean, serif;
+            font-style: normal;
+            font-weight: 200;
+        }
+        #name {
+            display: block;
+            position: absolute;
+            width : 400px;
+            height : 40px;
+            left : 660px;
+            top : 260px;
+            font-size: 1.0em;
+            color : white;
+            font-family: source-han-serif-korean, serif;
+            font-style: normal;
+            font-weight: 400;
+        }
+        #explain {
+            display: block;
+            position: absolute;
+            width : 600px;
+            height : 80px;
+            left : 660px;
+            top : 310px;
+            font-size: 1.0em;
+            color : white;
+            font-family: source-han-serif-korean, serif;
+            font-style: normal;
+            font-weight: 400;
+            line-height: 2.0em;
+        }
+        #exit {
+            display: block;
+            position: absolute;
+            width: 50px;
+            height: 50px;
+            right: 50px;
+            top: 50px;
+            background-image: url("exit_button.png");
+            background-size: cover;
+        }
+        img { width : 100%; height : 100%; }
+    </style>
+</head>
+<body>
+    <div class="background blur"></div>
+    <div id="image"></div>
+    <div id="text"><b>보이지 않는 손길</b></div>
+    <div id="name"><b>해리 벡위드 / 출판 더난출판사, 2000</b></div>
+    <div id="explain">
+        이 책의 주제를 한마디로 요약하면 '당신이 팔 물건이나 서비스를 구입하는 대상이 인간임을 명심하라'는 말이다. 이 말은 마케팅의 대상이 인간 자체임을 암시한다. 사람을 상대로 하는 모든 마케팅에는 단순한 판매행위와 구매행위 이상의 요소가 존재한다. 사람들은 결코 과학적인 생각이 아닌 인간적이고 본능적인 판단에 따라 구매를 결정한다. 따라서 '인간'을 바탕에 둔 심리 마케팅 원칙을 세우라는 것이다. 이 책은 우리가 당연하다고 생각하고 의심하지 않았던 마케팅의 관례들이 얼마나 잘못된 것인지 그 수많은 오류들을 정확히 지적한다. 또한 고객을 최우선으로 내세우고 고객의 관점에서 본다고는 하지만, 결국 자신의 관점을 고객의 것인 양 고집하는 경우들에 대해서도 수많은 사례들을 동원하여 설명하고 있다. 게다가 잘못된 관점들을 말로만 지적하는 것이 아니라, 실무에 유익한 가이드를 상세하게 제시하고 있어 독자들에게 많은 도움을 준다.
+    </div>
+    <a href="your_text_seekbar_3.html"><div id="exit"></div></a>
+</body>
+</html>
